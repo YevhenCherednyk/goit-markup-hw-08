@@ -1,0 +1,48 @@
+.nav{
+    &__list {
+        display: flex;
+    }   
+    
+    &__item:not(:last-child) {
+        position: relative;
+    
+        margin-right: 50px;
+    }  
+}
+
+.nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+
+    transition: color var(--animation);
+    
+    &:hover,
+    &:focus {
+        color: var(--decoration-text-color);
+    }
+
+    &--current {
+        color: var(--decoration-text-color);
+    }
+
+    &--current::after {
+        content: '';
+
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+
+        width: 100%;
+        height: 4px;
+        display: inline-block;
+        border-radius: 2px;
+        background-color: var(--decoration-text-color);
+    }
+}
+

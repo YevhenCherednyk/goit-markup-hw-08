@@ -1,0 +1,44 @@
+:root {
+
+    /* fonts */
+
+    --main-font: "Roboto";
+    --secondary-font: "Raleway";
+
+    /* text colors */
+
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --decoration-text-color: #2196F3;
+    --studio-header-color: #000000;
+    --light-text-color: #ffffff;
+    --contacts-text-color: rgba(255, 255, 255, 0.6);
+    --primary-icon-link-color: #AFB1B8;
+
+    /* background colors */
+
+    --main-ligt-bg-color: #ffffff;
+    --main-darck-bg-color: #2F303A;
+    --btn-bg-color: #2196F3;
+    --hover-btn-bg-color: #188CE8;
+    --secondary-bg-color: #F5F4FA;
+    --hero-bg-color: #C4C4C4;
+    --footer-media-link-bg-color: rgba(255, 255, 255, 0.1);
+    --item-dscr-bg-color: rgba(47, 48, 58, 0.8);
+    --portfolio-overlyey-bg-color: rgba(33, 150, 243, 0.9);
+
+    /* border colors */
+
+    --main-brd-color: #ECECEC;
+    --card-brd-color: #EEEEEE;
+
+    /* shadows */
+
+    --primary-shadow: rgba(0, 0, 0, 0.15);
+
+    /* others */
+
+    --items: 4;
+    --indent: 30px;
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

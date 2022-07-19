@@ -1,0 +1,18 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    transform: translateY(101%);
+
+    width: 100%;
+    height: 100%;
+
+    padding: 63px 24px;
+
+    background-color: var(--portfolio-overlyey-bg-color);
+
+
+    transition: transform var(--animation);
+}

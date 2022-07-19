@@ -1,0 +1,38 @@
+.examples {
+    padding-top: 0;
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        --items: 3;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__description {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 70px;
+
+
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--light-text-color);
+
+        background-color: var(--item-dscr-bg-color);
+    }
+}
+
+

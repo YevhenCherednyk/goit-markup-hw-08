@@ -1,0 +1,33 @@
+.feature{
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    border-radius: 4px;
+    background-color: var(--secondary-bg-color);
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+
+        font-weight: 700;
+        font-size: inherit;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--secondary-text-color);
+    }
+
+    &__description {
+        letter-spacing: 0.03em;
+    }
+}
+
