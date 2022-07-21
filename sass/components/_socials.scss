@@ -1,5 +1,10 @@
 .social{
+    @media screen and (max-width: 1200px) {
+            margin-bottom: 60px;
+        }
+
     &__title{
+    text-align: center;
     margin-bottom: 20px;
 
     font-size: 14px;
@@ -16,9 +21,7 @@
     
     &__icon {
         fill: currentColor;
-    }
-
-    
+    }   
 }
 
 .social-media__item {

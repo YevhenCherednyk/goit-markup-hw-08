@@ -1,5 +1,10 @@
 .examples {
-    padding-top: 0;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+            display: block;
+            padding-top: 0;
+        }
 
     &__title {
         margin-bottom: 50px;
@@ -24,7 +29,6 @@
         width: 100%;
         height: 70px;
 
-
         font-weight: 700;
         line-height: 1.14;
         letter-spacing: 0.03em;
@@ -34,5 +38,10 @@
         background-color: var(--item-dscr-bg-color);
     }
 }
+    
+            
+    
+    
+    
 
 
