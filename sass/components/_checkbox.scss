@@ -22,6 +22,8 @@
 }
 
 .checkbox__agreement {
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 
     user-select: none;
@@ -29,6 +31,11 @@
     &--conditions {
     text-decoration: underline;
     color: var(--decoration-text-color);
+    }
+
+    @media screen and (min-width: 1200px){
+        font-size: 14px;
+        line-height: 1.71;
     }
 }
 

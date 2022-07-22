@@ -1,15 +1,38 @@
 .header {
     border-bottom: 1px solid var(--main-brd-color);
     
-    &__container,
-    &__nav {
+    &__logo {
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        @media screen and (min-width: 767px){
+            padding-top: 26px;
+            padding-bottom: 26px;
+            margin-right: 88px;
+        }
+
+         @media screen and (min-width: 1200px){
+            padding-top: 24px;
+            padding-bottom: 25px;
+            margin-right: 93px;
+        }
+    }
+    
+    &__container{
         display: flex;
         align-items: center;
     }
+        
+    &__nav {
+        @media screen and (max-width: 767px){
+        display: none;
+        }
+    }
+   
 
-    &__logo {
-        padding-top: 24px;
-        padding-bottom: 25px;
-        margin-right: 93px;
+    &__contacts{
+        @media screen and (max-width: 767px){
+            display: none;
+        }
     }
 }

@@ -9,6 +9,7 @@
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--secondary-text-color);
     }
 
@@ -39,8 +40,6 @@
     transition: fill var(--animation);
     }
 }
-
-
 
 .register-form__input {
     width: 100%;

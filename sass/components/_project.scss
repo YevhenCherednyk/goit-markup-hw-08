@@ -1,5 +1,12 @@
 .project {
-    --items: 3;
+    @media screen and (min-width: 768px) {
+        --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+        --items: 3;
+    }
+    
 
     &__card {
         position: relative;
@@ -13,7 +20,7 @@
     color: var(--light-text-color);
     }
 
-    &__inf {
+    &__info {
         padding: 20px 24px;
         border: 1px solid var(--card-brd-color);
         border-top: none;
