@@ -1,6 +1,11 @@
 .contacts {
-    display: block;
-    margin-left: auto;
+    @media screen and (max-width: 767px){
+        margin-bottom: 64px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
     
     @media screen and (min-width: 1200px){
         display: flex;
@@ -11,25 +16,39 @@
         @media screen and (max-width: 1199px){
             margin-bottom: 10px;
         }
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 32px;
+        }
     }
 
     &__icon {
-        fill: currentColor;
+        display: none;
+
+        @media screen and (min-width: 768px){
+            display: block;
+            fill: currentColor;
+        }
     }
 }
 
 .contacts__link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
     font-weight: 500;
-    font-size: 12px;
+    font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: inherit;   
 
-    transition: color var(--animation);
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+
+        transition: color var(--animation);
+    }
+    
+        
 
     @media screen and (min-width: 1200px) {
         padding-top: 32px;
@@ -41,6 +60,15 @@
 
     &:hover,
     &:focus {
-        color: var(--decoration-text-color);
-    }   
+        @media screen and (min-width: 768px){     
+            color: var(--decoration-text-color);
+        }
+    } 
+    
+    &--accent{
+        @media screen and (max-width: 767px){
+            font-size: 34px;
+            color: var(--decoration-text-color);
+        }
+    }
 }

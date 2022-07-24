@@ -1,41 +1,47 @@
 .nav{
+    @media screen and (max-width: 767px) {
+        margin-bottom: auto;
+    }
+
     &__list {
-        display: flex;
-    }   
+        @media screen and (min-width: 768px){
+            display: flex;
+            gap: 50px;
+        }
+    }
+
+    &__item{
+        position: relative
+    }
     
     &__item:not(:last-child) {
-        position: relative;
-    
-        margin-right: 50px;
-    }  
+        @media screen and (max-width: 767px){
+            margin-bottom: 32px;
+        }
+    }
 }
 
 .nav__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     font-weight: 500;
-    line-height: 1.14;
+    font-size: 40px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 
     transition: color var(--animation);
-    
-    &:hover,
-    &:focus {
-        color: var(--decoration-text-color);
-    }
 
     &--current {
         color: var(--decoration-text-color);
     }
 
-    &--current::after {
+     &--current::after {
+
+        @media screen and (min-width: 768px) {
         content: '';
 
         position: absolute;
-        bottom: -1px;
+        bottom: 0;
         left: 0;
 
         width: 100%;
@@ -43,6 +49,28 @@
         display: inline-block;
         border-radius: 2px;
         background-color: var(--decoration-text-color);
+        }
+    }   
+       
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        font-size: 14px;
+        line-height: 1.14;
+    }
+    
+    &:hover,
+    &:focus {
+        @media screen and (min-width: 768px){
+            color: var(--decoration-text-color);
+        }
     }
 }
+
+
+
+
+
+
 

@@ -7,7 +7,7 @@
     <title>WebStudio</title>
 
     <!-- fonts start -->
-        
+
     <!-- fonts end -->
 
     <!-- normalize styles start -->
@@ -33,6 +33,71 @@
         <a class="header__logo logo link" href="./index.html" lang="en"
           >Web<span class="logo logo--dark-text">Studio</span>
         </a>
+
+        <!-- Mobile Window start -->
+
+        <button class="mobile-menu__btn" type="button" aria-label="меню" data-menu-button>
+          <svg class="mobile-menu__icon" width="24" height="16">
+            <use class="mobile-menu__open" href="./images/icons.svg#icon-menu-open"></use>
+            <use class="mobile-menu__close" href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--current link" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="contacts list">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--accent link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__socials list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="" target="_blank" rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="" target="_blank" rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="" target="_blank" rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="" target="_blank" rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Window end -->
+
         <nav class="nav header__nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -138,30 +203,84 @@
           <h2 class="examples__title tittle">Чем мы занимаемся</h2>
           <ul class="examples__list list card-set">
             <li class="examples__item card-set__item">
-              <img
-                src="./images/work/img_1.jpg"
-                alt="программист набирает код на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/work-1_desctop.webp    1x,
+                    ./images/work/work-1_desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/work-1_desctop.jpg    1x,
+                    ./images/work/work-1_desctop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/work/work-1_desctop.jpg"
+                  alt="программист набирает код на планшете"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="examples__description">Десктопные приложения</p>
             </li>
             <li class="examples__item card-set__item">
-              <img
-                src="./images/work/img_2.jpg"
-                alt="девушка сверяет макет на нокибуке и в смартфоне "
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/work-2_desctop.webp    1x,
+                    ./images/work/work-2_desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/work-2_desctop.jpg    1x,
+                    ./images/work/work-2_desctop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/work/work-2_desctop.jpg"
+                  alt="девушка сверяет макет на нокибуке и в смартфоне "
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="examples__description">Мобильные приложения</p>
             </li>
             <li class="examples__item card-set__item">
-              <img
-                src="./images/work/img_3.jpg"
-                alt="цветовая гамма на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/work-3_desctop.webp    1x,
+                    ./images/work/work-3_desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/work-3_desctop.jpg    1x,
+                    ./images/work/work-3_desctop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/work/work-3_desctop.jpg"
+                  alt="цветовая гамма на планшете"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="examples__description">Дизайнерские решения</p>
             </li>
           </ul>
@@ -175,13 +294,63 @@
           <h2 class="team__title tittle">Наша команда</h2>
           <ul class="team__list card-set list">
             <li class="team__item card-set__item">
-              <img
-                class="team__photo"
-                src="./images/team/person_1.jpg"
-                alt="молодой мужчина с бородой, в очках, темные волосы, в коричневой рубашке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person-1_desctop.webp    1x,
+                    ./images/team/person-1_desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person-1_desctop.jpg    1x,
+                    ./images/team/person-1_desctop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person-1_tablet.webp    1x,
+                    ./images/team/person-1_tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person-1_tablet.jpg    1x,
+                    ./images/team/person-1_tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/person-1_mobile.webp    1x,
+                    ./images/team/person-1_mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/person-1_mobile.jpg    1x,
+                    ./images/team/person-1_mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__photo"
+                  src="./images/team/person-1_mobile.jpg"
+                  alt="молодой мужчина с бородой, в очках, темные волосы, в коричневой рубашке"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <h3 class="team__subtitle">Игорь Демьяненко</h3>
               <p class="team__position" lang="en">Product Designer</p>
               <ul class="social-media team__social-media list">
@@ -240,13 +409,63 @@
               </ul>
             </li>
             <li class="team__item card-set__item">
-              <img
-                class="team__photo"
-                src="./images/team/person_2.jpg"
-                alt="молодая девушка, в очках, светлые волосы, в темном пиджаке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person-2_desctop.webp    1x,
+                    ./images/team/person-2_desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person-2_desctop.jpg    1x,
+                    ./images/team/person-2_desctop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person-2_tablet.webp    1x,
+                    ./images/team/person-2_tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person-2_tablet.jpg    1x,
+                    ./images/team/person-2_tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/person-2_mobile.webp    1x,
+                    ./images/team/person-2_mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/person-2_mobile.jpg    1x,
+                    ./images/team/person-2_mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__photo"
+                  src="./images/team/person-2_mobile.jpg"
+                  alt="молодая девушка, в очках, светлые волосы, в темном пиджаке"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <h3 class="team__subtitle">Ольга Репина</h3>
               <p class="team__position" lang="en">Frontend Developer</p>
               <ul class="social-media list">
@@ -305,13 +524,63 @@
               </ul>
             </li>
             <li class="team__item card-set__item">
-              <img
-                class="team__photo"
-                src="./images/team/person_3.jpg"
-                alt="молодой мужчина с бородой, темные волосы, в светлой рубашке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person-3_desctop.webp    1x,
+                    ./images/team/person-3_desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person-3_desctop.jpg    1x,
+                    ./images/team/person-3_desctop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person-3_tablet.webp    1x,
+                    ./images/team/person-3_tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person-3_tablet.jpg    1x,
+                    ./images/team/person-3_tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/person-3_mobile.webp    1x,
+                    ./images/team/person-3_mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/person-3_mobile.jpg    1x,
+                    ./images/team/person-3_mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__photo"
+                  src="./images/team/person-3_mobile.jpg"
+                  alt="молодой мужчина с бородой, темные волосы, в светлой рубашке"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <h3 class="team__subtitle">Николай Тарасов</h3>
               <p class="team__position" lang="en">Marketing</p>
               <ul class="social-media list">
@@ -370,13 +639,63 @@
               </ul>
             </li>
             <li class="team__item card-set__item">
-              <img
-                class="team__photo"
-                src="./images/team/person_4.jpg"
-                alt="молодой мужчина с бородой, в очках, темные волосы, в черной футболке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person-4_desctop.webp    1x,
+                    ./images/team/person-4_desctop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person-4_desctop.jpg    1x,
+                    ./images/team/person-4_desctop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person-4_tablet.webp    1x,
+                    ./images/team/person-4_tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person-4_tablet.jpg    1x,
+                    ./images/team/person-4_tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/person-4_mobile.webp    1x,
+                    ./images/team/person-4_mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team/person-4_mobile.jpg    1x,
+                    ./images/team/person-4_mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__photo"
+                  src="./images/team/person-4_mobile.jpg"
+                  alt="молодой мужчина с бородой, в очках, темные волосы, в черной футболке"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <h3 class="team__subtitle">Михаил Ермаков</h3>
               <p class="team__position" lang="en">UI Designer</p>
               <ul class="social-media list">
@@ -628,6 +947,7 @@
     </footer>
 
     <!-- Modal Window -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="register-form">
@@ -700,5 +1020,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
