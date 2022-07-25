@@ -13,6 +13,7 @@
 
     background-color: var(--main-ligt-bg-color);
     z-index: 10;
+    overflow:auto;
 
     transition: transform var(--animation);
 
