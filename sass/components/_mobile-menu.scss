@@ -2,6 +2,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
+
     transform: translateX(100%);
 
     display: flex;
@@ -12,8 +14,9 @@
     padding: 48px 40px;
 
     background-color: var(--main-ligt-bg-color);
-    z-index: 10;
 
+    overflow: auto;
+    
     transition: transform var(--animation);
 
     &.is-open{
