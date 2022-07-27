@@ -6,7 +6,6 @@
     @media screen and (min-width: 1200px) {
         --items: 3;
     }
-    
 
     &__card {
         position: relative;
@@ -24,6 +23,8 @@
         padding: 20px 24px;
         border: 1px solid var(--card-brd-color);
         border-top: none;
+
+        flex-grow: 1;
     }
 
     &__name {
@@ -45,7 +46,9 @@
 }
 
 .project__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     transition: box-shadow var(--animation);
 
