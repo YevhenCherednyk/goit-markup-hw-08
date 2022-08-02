@@ -1242,14 +1242,6 @@ img {
   }
 }
 
-.client {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .client {
-    display: block;
-  }
-}
 .client__title {
   margin-bottom: 30px;
 }
@@ -1259,7 +1251,12 @@ img {
   }
 }
 .client__list {
-  --items: 3;
+  --items: 2;
+}
+@media screen and (min-width: 768px) {
+  .client__list {
+    --items: 3;
+  }
 }
 @media screen and (min-width: 1200px) {
   .client__list {
